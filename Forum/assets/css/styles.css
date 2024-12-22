@@ -1,0 +1,495 @@
+/* styles.css */
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    background-color: #007acc;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #007acc;
+}
+
+form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005f99;
+}
+
+.topic {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.topic h3 {
+    margin: 0 0 10px 0;
+    color: #007acc;
+}
+
+.reply {
+    background-color: #e9f5ff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Tampilan untuk halaman login */
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #005f99;
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+}
+
+.login-container p a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Tampilan untuk balasan */
+.replies {
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #007acc;
+}
+
+.reply {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.reply small {
+    color: #777;
+}
+
+.topic p {
+    font-weight: bold;
+}
+
+.topic h3 a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+/* Form balasan */
+.reply-form {
+    margin-top: 10px;
+}
+
+.reply-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+.reply-form button {
+    padding: 5px 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reply-form button:hover {
+    background-color: #005fa3;
+}
+
+.reply {
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid #007acc;
+}
+
+.replies {
+    margin-top: 20px;
+}
+
+/* Styling untuk foto profil */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.topic, .reply {
+    margin-bottom: 20px;
+}
+
+.topic h3 a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.topic p {
+    font-weight: bold;
+}
+
+.reply-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+.reply-form button {
+    padding: 5px 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reply-form button:hover {
+    background-color: #005fa3;
+}
+
+/* Styling untuk tombol secara umum */
+button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px 0;
+}
+
+/* Tombol Edit - berwarna biru */
+button.edit-button {
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+}
+
+button.edit-button:hover {
+    background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+}
+
+/* Tombol Hapus - berwarna merah */
+button.delete-button {
+    background-color: #f44336; /* Warna merah */
+    color: white;
+}
+
+button.delete-button:hover {
+    background-color: #d32f2f; /* Warna merah lebih gelap saat hover */
+}
+
+/* Styling untuk form balasan */
+.reply-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.reply-form button {
+    padding: 7px 15px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reply-form button:hover {
+    background-color: #005fa3; /* Biru lebih gelap saat hover */
+}
+
+/* Menyesuaikan tampilan avatar */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Container utama */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form Pendaftaran */
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label untuk input */
+.register-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input */
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Tombol Daftar */
+.register-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+    background-color: #005fa3;
+}
+
+/* Pesan error */
+.error-messages {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.error-messages p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Link ke halaman login */
+.register-form a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.register-form a:hover {
+    text-decoration: underline;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Container utama */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form Pendaftaran */
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label untuk input */
+.register-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input */
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form input[type="file"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Pesan error */
+.error-messages {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Pratinjau foto profil */
+#profilePreview {
+    display: block;
+    margin: 10px 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
